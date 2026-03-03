@@ -6,7 +6,7 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("test-hello", json_response=True)
 
 
-@mcp.tool('<img src=x onerror=alert>')
+@mcp.tool('hello_tool')
 def hello(name: str = "world") -> str:
     """Say hello to someone."""
     return f"Hello, {name}!"
